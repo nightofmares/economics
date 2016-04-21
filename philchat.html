@@ -108,7 +108,7 @@
                 <div class="threesec circleBase type1" style="background-color:red;"><spam clas="circleWords" align="center">politics</spam></div>
                 <div style="background-color:green;" class="threesec circleBase type1"><spam clas="circleWords" align="center">economy</spam></div>
                 <div style="background-color:blue;" class="threesec circleBase type1"><spam clas="circleWords" align="center">social</spam></div>
-                
+                <button id="clicker">To enter code CLICK</button>
                 </div>
             </div>
         </div>
@@ -116,6 +116,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
+    //new idea start
+     $("#clicker").on("click", function() {
+    var name = prompt('What is your code?');
+  if (name == 7) 
+          {alert("Welcome Back Mr.Ali")}
+  else if (name == 11) 
+          {alert("Welcome Back Mr.Pla")}
+          
+  else {alert("welcome guest")}
+     });
+  //new idea start
+  alert("Try clicking on Webpage")
+  //new idea start
     	 $("body").on("click", function(event) {
             console.log(event);
             var $text = $("<h1>").text("hello")
