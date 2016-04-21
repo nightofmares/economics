@@ -115,6 +115,16 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+    	 $("body").on("click", function(event) {
+            console.log(event);
+            var $text = $("<h1>").text("hello")
+                .css("position", "absolute")
+                .css("top", event.pageY + "px")
+                .css("left", event.pageX + "px")
+                .appendTo("body");
+        });
+    </script>
 
 </body>
 </html>
