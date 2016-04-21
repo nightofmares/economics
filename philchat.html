@@ -108,7 +108,10 @@
                 <div class="threesec circleBase type1" style="background-color:red;"><spam clas="circleWords" align="center">politics</spam></div>
                 <div style="background-color:green;" class="threesec circleBase type1"><spam clas="circleWords" align="center">economy</spam></div>
                 <div style="background-color:blue;" class="threesec circleBase type1"><spam clas="circleWords" align="center">social</spam></div>
+                <br>
                 <button id="clicker">To enter code CLICK</button>
+                <br>
+                <button id="SEbutton1">Clicker</button>
                 </div>
             </div>
         </div>
@@ -129,8 +132,9 @@
   else {alert("welcome guest")}
      });
   //new idea start
-  alert("Try clicking on Webpage")
+  alert("Try clicking buttons for special effects!")
   //new idea start
+   $("#SEbutton1").on("click", function() {
     	 $("body").on("click", function(event) {
             console.log(event);
             var $text = $("<h1>").text("hello")
@@ -139,6 +143,7 @@
                 .css("left", event.pageX + "px")
                 .appendTo("body");
         });
+   }); 
     </script>
 
 </body>
