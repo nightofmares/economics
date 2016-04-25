@@ -11,7 +11,7 @@
                 var touch = changedTouches[i];
                 
                 $("<img>").attr({
-                    src: "https://www.kasandbox.org/programming-images/avatars/mr-pink.png",
+                    src: "http://handmadefont.com/wp-content/uploads/2013/11/Oil-brush-font-letter-A.png",
                     // each touch has a unique identifier
                     // we'll assign use this identifier as
                     // the id so that each touch is paired
